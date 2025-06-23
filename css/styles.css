@@ -1,12 +1,113 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
     padding: 2rem;
+    background-color: #f5f7fa;
+    color: #333;
   }
-  #post-list div {
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h4 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  .post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .post-list div {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
     cursor: pointer;
-    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.2s ease;
   }
+  
+  .post-list div:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+  }
+  
+  .post-list img {
+    max-width: 100%;
+    border-radius: 4px;
+  }
+  
+  .post-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .styled-form input,
+  .styled-form textarea {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .styled-form button {
+    padding: 0.7rem 1rem;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .styled-form button:hover {
+    background-color: #2980b9;
+  }
+  
   .hidden {
     display: none;
   }
+  
+  #delete-btn {
+    background-color: #e74c3c;
+    margin-left: 1rem;
+  }
+  
+  #delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  #edit-btn {
+    background-color: #f39c12;
+  }
+  
+  #edit-btn:hover {
+    background-color: #e67e22;
+  }
+
   
