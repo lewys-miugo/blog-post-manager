@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+  #post-list div {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  .hidden {
+    display: none;
+  }
+  
